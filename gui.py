@@ -58,7 +58,7 @@ class GameOfLifeGui(tk.Frame):
             self.game.enforceRules()
             self.synchronize()
         mainwindow.update()
-        print(nm.array(self.game.grid.grid))
+        #print(nm.array(self.game.grid.grid))
         mainwindow.after(FPS, self.game_loop)
 
 if __name__ == "__main__":
